@@ -105,6 +105,21 @@ section{scroll-margin-top:86px}
 .project:focus-visible{box-shadow:0 0 0 3px rgba(228,87,46,.45)}
 @media(max-width:700px){.project-back-content{padding:26px}.project-back-content h3{font-size:21px}.project-back-content p{font-size:13px}.project-front .project-flip-hint{right:0;bottom:0}}
 
+
+/* Enquiry form only — isolated addition */
+.enquiry-section{background:#fff}
+.enquiry-panel{max-width:850px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;box-shadow:0 14px 40px rgba(10,20,30,.06)}
+.enquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.enquiry-field{display:flex;flex-direction:column;gap:6px}
+.enquiry-field.full{grid-column:1/-1}
+.enquiry-field label{font-size:13px;font-weight:700;color:var(--ink)}
+.enquiry-field input,.enquiry-field select,.enquiry-field textarea{width:100%;border:1px solid #d9dfe4;border-radius:7px;padding:12px 13px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}
+.enquiry-field input:focus,.enquiry-field select:focus,.enquiry-field textarea:focus{outline:2px solid rgba(228,87,46,.22);border-color:var(--gold)}
+.enquiry-field textarea{min-height:125px;resize:vertical}
+.enquiry-submit{border:0;cursor:pointer;font:inherit;font-weight:700}
+.enquiry-note{font-size:12px;color:var(--muted);margin-top:12px}
+@media(max-width:700px){.enquiry-panel{padding:20px 16px}.enquiry-form{grid-template-columns:1fr}.enquiry-field.full{grid-column:auto}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -166,7 +181,33 @@ section{scroll-margin-top:86px}
 <section id="capabilities"><div class="container"><div class="section-head"><div class="eyebrow">At a Glance</div><h2>Resources supporting project execution.</h2><p>A field-oriented team and equipment base support transportation, excavation and construction activities.</p></div><div class="capability">
 <div><b>13</b><span>TATA BS-6 14-tyre vehicles</span></div><div><b>9</b><span>Ashok Leyland BS-6 14-tyre vehicles</span></div><div><b>3</b><span>TATA BS-6 22-tyre vehicles</span></div><div><b>3</b><span>30-ton hydraulic excavators</span></div><div><b>2</b><span>JCB backhoe loaders</span></div><div><b>3+2</b><span>Air compressors — 250 & 400 PSI</span></div><div><b>3</b><span>Tractors listed in profile</span></div><div><b>123</b><span>Listed engineers & workforce</span></div></div></div></section>
 <section class="light"><div class="container equipment"><div><div class="eyebrow">How We Work</div><h2 style="font-size:42px;margin:14px 0">A disciplined approach from planning to delivery.</h2><p style="color:var(--muted)">Our approach is built around clear scope, coordinated field execution, quality focus and dependable communication.</p></div><div class="process"><div class="step"><div class="step-no">01</div><h3>Understand</h3><p>Scope, site conditions and project requirements.</p></div><div class="step"><div class="step-no">02</div><h3>Plan</h3><p>Resources, manpower, plant and execution sequence.</p></div><div class="step"><div class="step-no">03</div><h3>Execute</h3><p>Coordinated field work with quality and safety focus.</p></div><div class="step"><div class="step-no">04</div><h3>Deliver</h3><p>Completion-focused execution and client coordination.</p></div></div></div></section>
-<section><div class="container"><div class="cta"><div><div class="eyebrow">Let's Work Together</div><h2>Have a construction or infrastructure requirement?</h2><p>Connect with our team for project discussions and business enquiries.</p></div><a class="btn btn-primary" href="mailto:Admin@rfcllp.com?subject=Business%20Enquiry%20-%20Red%20Flamingos%20Corporation">Send Enquiry →</a></div></div></section>
+<section><div class="container"><div class="cta"><div><div class="eyebrow">Let's Work Together</div><h2>Have a construction or infrastructure requirement?</h2><p>Connect with our team for project discussions and business enquiries.</p></div><a class="btn btn-primary" href="#enquiry">Send Enquiry →</a></div></div></section>
+
+<section id="enquiry" class="enquiry-section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Business Enquiry</div>
+      <h2>Tell us about your requirement.</h2>
+      <p>Share your contact details and project requirement. Our team can get in touch with you.</p>
+    </div>
+    <div class="enquiry-panel">
+      <form class="enquiry-form" action="https://formsubmit.co/Admin@rfcllp.com" method="POST">
+        <input type="hidden" name="_subject" value="New Website Enquiry - Red Flamingos Corporation LLP">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <div class="enquiry-field"><label for="enq-name">Full Name *</label><input id="enq-name" name="Full Name" type="text" autocomplete="name" required maxlength="100" placeholder="Your full name"></div>
+        <div class="enquiry-field"><label for="enq-phone">Mobile Number *</label><input id="enq-phone" name="Mobile Number" type="tel" autocomplete="tel" required maxlength="20" pattern="[+0-9 ()-]{8,20}" placeholder="+91"></div>
+        <div class="enquiry-field"><label for="enq-email">Email Address *</label><input id="enq-email" name="Email Address" type="email" autocomplete="email" required maxlength="150" placeholder="you@example.com"></div>
+        <div class="enquiry-field"><label for="enq-company">Company / Organisation</label><input id="enq-company" name="Company / Organisation" type="text" autocomplete="organization" maxlength="150" placeholder="Company name (if applicable)"></div>
+        <div class="enquiry-field"><label for="enq-type">Enquiry Type *</label><select id="enq-type" name="Enquiry Type" required><option value="">Select enquiry type</option><option>Civil Construction</option><option>OHT / OHSR</option><option>Pipeline / Water Infrastructure</option><option>Transmission Line Works</option><option>Tender / Subcontract Work</option><option>Transportation / Material Supply</option><option>Other</option></select></div>
+        <div class="enquiry-field"><label for="enq-location">Project Location</label><input id="enq-location" name="Project Location" type="text" maxlength="150" placeholder="City, State"></div>
+        <div class="enquiry-field full"><label for="enq-message">Project Details / Message *</label><textarea id="enq-message" name="Project Details" required maxlength="3000" placeholder="Please share your project scope, approximate quantity or value, timeline, and other relevant details."></textarea></div>
+        <div class="enquiry-field full"><button class="btn btn-primary enquiry-submit" type="submit">Submit Enquiry →</button><p class="enquiry-note">Your details will be used to respond to this business enquiry. Please do not include passwords or sensitive personal information.</p></div>
+      </form>
+    </div>
+  </div>
+</section>
+
 <section id="contact"><div class="container"><div class="section-head"><div class="eyebrow">Contact</div><h2>Start a conversation with our team.</h2><p>For construction, transportation, water infrastructure and material supply enquiries.</p></div><div class="contact-grid"><div class="contact-card"><h3>Business Enquiries</h3><p>📞 <a class="contact-link" href="tel:+916388803330">+91 63888 03330</a></p><p>✉️ <a class="contact-link" href="mailto:Admin@rfcllp.com">Admin@rfcllp.com</a></p><p>Leadership: Mr. Avinash Yadav</p></div><div class="contact-card"><h3>Quick Connect</h3><p>For faster response, call us directly or send an email with your project requirement.</p><div class="actions"><a class="btn btn-primary" href="tel:+916388803330">Call Now</a><a class="btn" style="border:1px solid var(--line);margin-left:8px" href="mailto:Admin@rfcllp.com">Email Us</a></div></div></div></div></section>
 </main>
 <a class="wa" href="https://wa.me/916388803330" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>

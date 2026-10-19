@@ -197,6 +197,7 @@ function openEnquiry(event){if(event)event.preventDefault();const section=docume
       <form class="enquiry-form" action="https://formsubmit.co/Admin@rfcllp.com" method="POST">
         <input type="hidden" name="_subject" value="New Website Enquiry - Red Flamingos Corporation LLP">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://rfcllp.com/?enquiry=success#enquiry">
         <input type="hidden" name="_captcha" value="true">
         <div class="enquiry-field"><label for="enq-name">Full Name *</label><input id="enq-name" name="Full Name" type="text" autocomplete="name" required maxlength="100" placeholder="Your full name"></div>
         <div class="enquiry-field"><label for="enq-phone">Mobile Number *</label><input id="enq-phone" name="Mobile Number" type="tel" autocomplete="tel" required maxlength="20" pattern="[+0-9 ()-]{8,20}" placeholder="+91"></div>

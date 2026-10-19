@@ -11,7 +11,7 @@
 body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7f9fb}
 header{background:#111920;color:#fff;padding:18px 24px}
 .head{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-weight:800;letter-spacing:1px}.brand small{display:block;color:#f27a53;font-size:10px;letter-spacing:2px;margin-top:5px}
+.brand{font-weight:800;letter-spacing:1px;display:flex;align-items:center;gap:12px}.brand-mark{width:48px;height:48px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:2px solid #f27a53;color:#f27a53;font-size:16px;letter-spacing:0}.brand small{display:block;color:#f27a53;font-size:10px;letter-spacing:2px;margin-top:5px}
 header a{color:#fff;text-decoration:none;font-weight:700;font-size:14px}
 main{max-width:900px;margin:58px auto;padding:0 20px 60px}
 .eyebrow{font-size:12px;letter-spacing:3px;color:#a56a00;font-weight:800;margin-bottom:16px}
@@ -31,7 +31,7 @@ button{background:var(--orange);border:0;border-radius:7px;color:#fff;font:inher
 </style>
 </head>
 <body>
-<header><div class="head"><a href="https://rfcllp.com/" class="brand">RED FLAMINGOS <small>CORPORATION LLP</small></a><a href="https://rfcllp.com/">← Back to website</a></div></header>
+<header><div class="head"><a href="https://rfcllp.com/" class="brand"><span class="brand-mark">RF</span><span>RED FLAMINGOS <small>CORPORATION LLP</small></span></a><a href="https://rfcllp.com/">← Back to website</a></div></header>
 <main>
 <div class="eyebrow">BUSINESS ENQUIRY</div>
 <h1>Tell us about your requirement.</h1>
@@ -56,7 +56,7 @@ button{background:var(--orange);border:0;border-radius:7px;color:#fff;font:inher
 </div>
 </main>
 <script>
-(function(){const p=new URLSearchParams(window.location.search);if(p.get("success")==="1"){document.getElementById("enquiry-form").hidden=true;document.getElementById("thanks").hidden=false;document.title="Thank You | Red Flamingos Corporation LLP";}})();
+(function(){const p=new URLSearchParams(window.location.search);if(p.get("success")==="1"){document.getElementById("enquiry-form").hidden=true;document.getElementById("thanks").hidden=false;document.title="Thank You | Red Flamingos Corporation LLP";setTimeout(function(){window.location.replace("https://rfcllp.com/");},4500);}})();
 </script>
 </body>
 </html>

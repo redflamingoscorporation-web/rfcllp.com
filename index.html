@@ -126,20 +126,35 @@ section{scroll-margin-top:86px}
 </style>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Red Flamingos Corporation LLP",
-  "legalName":"Red Flamingos Corporation LLP",
-  "alternateName":"RFC LLP",
-  "url":"https://rfcllp.com/",
-  "email":"Admin@rfcllp.com",
-  "telephone":"+91-6388803330",
-  "description":"Red Flamingos Corporation LLP provides civil construction, OHT/OHSR construction, water supply pipelines, pipe laying, earthwork and 400 kV & 765 kV transmission line civil works across India.",
-  "areaServed":{"@type":"Country","name":"India"},
-  "knowsAbout":["Civil Construction","Water Infrastructure","Overhead Water Tank Construction","OHT Construction","OHSR Construction","Water Supply Pipelines","Pipe Laying","Jal Jeevan Mission","Earthwork","Transportation Infrastructure","Material Supply","Government Infrastructure Projects","Transmission Line Civil Works","400 kV Transmission Line Works","765 kV Transmission Line Works"],
-  "contactPoint":[{"@type":"ContactPoint","telephone":"+91-6388803330","email":"Admin@rfcllp.com","contactType":"business enquiries","areaServed":"IN","availableLanguage":["English","Hindi"]}]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://rfcllp.com/#organization",
+      "name": "Red Flamingos Corporation LLP",
+      "legalName": "Red Flamingos Corporation LLP",
+      "alternateName": "RFC LLP",
+      "url": "https://rfcllp.com/",
+      "email": "Admin@rfcllp.com",
+      "telephone": "+91-6388803330",
+      "description": "Red Flamingos Corporation LLP provides civil construction, OHT/OHSR construction, water supply pipelines, pipe laying, earthwork and 400 kV & 765 kV transmission line civil works across India.",
+      "areaServed": {"@type": "Country", "name": "India"},
+      "knowsAbout": ["Civil Construction", "Water Infrastructure", "Overhead Water Tank Construction", "OHT Construction", "OHSR Construction", "Water Supply Pipelines", "Pipe Laying", "Jal Jeevan Mission", "Earthwork", "Transportation Infrastructure", "Material Supply", "Government Infrastructure Projects", "Transmission Line Civil Works", "400 kV Transmission Line Works", "765 kV Transmission Line Works"],
+      "contactPoint": [{"@type": "ContactPoint", "telephone": "+91-6388803330", "email": "Admin@rfcllp.com", "contactType": "business enquiries", "areaServed": "IN", "availableLanguage": ["English", "Hindi"]}],
+      "employee": [
+        {"@type": "Person", "name": "Er. Avinash Yadav", "jobTitle": "Chief Executive Officer (CEO)", "url": "https://rfcllp.com/#team"},
+        {"@type": "Person", "name": "Alka Gupta", "jobTitle": "Managing Director", "url": "https://rfcllp.com/#team"},
+        {"@type": "Person", "name": "Soni", "jobTitle": "Managing Director", "url": "https://rfcllp.com/#team"},
+        {"@type": "Person", "name": "Er. Vishwas Gupta", "jobTitle": "Tech Team Lead", "url": "https://rfcllp.com/#team"},
+        {"@type": "Person", "name": "Er. Sourabh Singh", "jobTitle": "Construction Manager", "url": "https://rfcllp.com/#team"}
+      ]
+    }
+  ]
 }
-(function(){const p=new URLSearchParams(window.location.search);const target=p.get("section");if(target&&["about","services","projects","capabilities","team","contact"].includes(target)){window.addEventListener("load",function(){const el=document.getElementById(target);if(el){el.scrollIntoView({behavior:"auto",block:"start"});history.replaceState(null,"",window.location.pathname);}});}})();function openEnquiry(event){if(event)event.preventDefault();const section=document.getElementById("enquiry");if(!section)return false;section.hidden=false;section.classList.add("enquiry-open");section.scrollIntoView({behavior:"smooth",block:"start"});return false;}</script>
+</script>
+<script>
+(function(){const p=new URLSearchParams(window.location.search);const target=p.get("section");if(target&&["about","services","projects","capabilities","team","contact"].includes(target)){window.addEventListener("load",function(){const el=document.getElementById(target);if(el){el.scrollIntoView({behavior:"auto",block:"start"});history.replaceState(null,"",window.location.pathname);}});}})();function openEnquiry(event){if(event)event.preventDefault();const section=document.getElementById("enquiry");if(!section)return false;section.hidden=false;section.classList.add("enquiry-open");section.scrollIntoView({behavior:"smooth",block:"start"});return false;}
+</script>
 <link rel="icon" href="logo-transparent-png.png" type="image/png">
 </head>
 <body>

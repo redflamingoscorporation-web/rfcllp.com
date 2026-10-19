@@ -63,33 +63,29 @@ nav a:hover{color:var(--gold2)}
 .contact-link{color:#c94421}
 .wa{background:#20b15a}
 
-/* India map hero visual — isolated to the homepage hero */
-.hero-layout{grid-template-columns:minmax(0,1.04fr) minmax(350px,.96fr);gap:34px}
+/* Premium editorial infrastructure visual — homepage hero only */
+.hero-layout{grid-template-columns:minmax(0,1.04fr) minmax(360px,.96fr);gap:38px}
 .hero-inner{max-width:none;min-width:0}
-.india-showcase{position:relative;z-index:3;min-height:510px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 22px 20px;overflow:hidden;border:1px solid rgba(241,199,106,.22);border-radius:24px;background:radial-gradient(ellipse at 50% 42%,rgba(241,199,106,.12),transparent 55%),linear-gradient(150deg,rgba(255,255,255,.065),rgba(255,255,255,.018));box-shadow:0 24px 80px rgba(0,0,0,.18)}
-.india-showcase:before,.india-showcase:after{content:"";position:absolute;border:1px solid rgba(241,199,106,.12);border-radius:50%;width:390px;height:390px;pointer-events:none}
-.india-showcase:before{top:46px;left:50%;transform:translateX(-50%)}
-.india-showcase:after{top:76px;left:50%;transform:translateX(-50%);width:330px;height:330px;border-style:dashed}
-.india-label{align-self:flex-start;display:flex;align-items:center;gap:9px;position:relative;z-index:2;color:#f1c76a;font-size:9px;font-weight:800;letter-spacing:2.4px}
-.india-live-dot{width:7px;height:7px;background:#ff8a5b;border-radius:50%;box-shadow:0 0 0 5px rgba(255,138,91,.12)}
-.india-map-wrap{height:330px;width:min(100%,340px);position:relative;display:flex;align-items:center;justify-content:center;margin-top:2px}
-.india-map{height:100%;width:100%;position:relative;z-index:1;overflow:visible;filter:drop-shadow(0 0 15px rgba(241,199,106,.08))}
-.india-map .india-shape{stroke-linecap:round}
-.india-nodes circle{fill:#ff8a5b;stroke:#ffe0a0;stroke-width:1.5;filter:url(#indiaGlow)}
-.india-map-labels{fill:#d9e0e4;font-size:7px;font-weight:800;letter-spacing:1.2px}
-.map-orbit{position:absolute;z-index:0;left:50%;top:50%;border:1px solid rgba(255,138,91,.22);border-radius:50%;transform:translate(-50%,-50%) rotate(-22deg);pointer-events:none}
-.orbit-one{width:245px;height:100px}.orbit-two{width:285px;height:132px;transform:translate(-50%,-50%) rotate(34deg);border-color:rgba(241,199,106,.16)}
-.india-stamp{position:absolute;right:5px;bottom:28px;z-index:2;width:62px;height:62px;border:1px solid rgba(241,199,106,.5);border-radius:50%;background:#0c1b29;display:flex;align-items:center;justify-content:center;flex-direction:column;box-shadow:0 0 0 5px rgba(241,199,106,.05)}
-.india-stamp span{font-family:Manrope,Arial,sans-serif;color:#f1c76a;font-weight:900;font-size:22px;line-height:1}
-.india-stamp small{font-size:6px;line-height:1.3;letter-spacing:1px;text-align:center;color:#d9e0e4;margin-top:3px}
-.india-headline{position:relative;z-index:2;text-align:center;line-height:1.15;letter-spacing:2px;margin-top:-3px}
-.india-headline span{display:block;color:#c5d1d9;font-size:10px;font-weight:800;letter-spacing:4px}
-.india-headline strong{display:block;color:#fff;font-family:Manrope,Arial,sans-serif;font-size:23px;font-weight:900;margin-top:5px}
-.india-caption{position:relative;z-index:2;text-align:center;color:#b9c6ce;font-size:11px;margin:8px 0 14px}
-.india-tags{position:relative;z-index:2;display:flex;gap:7px;flex-wrap:wrap;justify-content:center}
-.india-tags span{padding:5px 9px;border:1px solid rgba(241,199,106,.25);border-radius:4px;color:#f1c76a;font-size:8px;font-weight:800;letter-spacing:1.4px;background:rgba(241,199,106,.04)}
-@media(max-width:1050px){.hero-layout{grid-template-columns:1fr;gap:20px}.hero-inner{padding-bottom:0}.india-showcase{max-width:560px;width:100%;margin:0 auto 26px;min-height:470px}.india-map-wrap{height:290px}.hero{min-height:auto}}
-@media(max-width:700px){.hero-layout{gap:18px}.hero-inner{padding:66px 0 0}.india-showcase{min-height:430px;padding:20px 14px 18px;border-radius:18px;margin-bottom:22px}.india-map-wrap{height:260px;width:min(100%,300px)}.india-headline strong{font-size:20px}.india-caption{font-size:10px}.india-stamp{right:0;bottom:18px;width:54px;height:54px}}
+.premium-visual{position:relative;z-index:3;min-height:510px;padding:22px 24px 18px;border:1px solid rgba(241,199,106,.19);border-radius:3px 3px 22px 3px;overflow:hidden;background:linear-gradient(145deg,#102331 0%,#0b1925 65%,#101f2b 100%);box-shadow:0 30px 80px rgba(0,0,0,.24)}
+.premium-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.025) 48%,transparent 49%),radial-gradient(circle at 65% 35%,rgba(214,162,58,.10),transparent 40%);pointer-events:none}
+.premium-visual-top,.premium-visual-bottom{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-start;gap:15px}
+.premium-overline,.premium-index{font-size:9px;font-weight:800;letter-spacing:2.5px;color:#f1c76a}
+.premium-index{color:#9eabb4;letter-spacing:1.4px}.premium-index i{font-style:normal;color:#f1c76a;padding:0 5px}
+.premium-art{height:300px;position:relative;display:flex;align-items:center;justify-content:center;margin:8px 0 2px}
+.premium-art svg{position:relative;z-index:1;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 12px 16px rgba(0,0,0,.15))}
+.premium-orb{position:absolute;z-index:2;right:7px;top:24px;width:55px;height:55px;border:1px solid rgba(241,199,106,.5);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#f1c76a;font-size:16px;font-weight:900;background:rgba(8,18,30,.75);box-shadow:0 0 0 5px rgba(241,199,106,.04)}
+.premium-orb span{font-size:6px;letter-spacing:1.6px;color:#c7d0d8;margin-top:2px}
+.premium-visual-bottom{align-items:flex-end;border-top:1px solid rgba(255,255,255,.12);padding-top:19px}
+.premium-small{display:block;color:#aab8c2;font-size:8px;letter-spacing:2.3px;font-weight:800;margin-bottom:8px}
+.premium-visual-bottom h2{font-size:clamp(20px,2vw,27px);line-height:1.25;letter-spacing:-.6px;color:#fff;font-weight:700}
+.premium-visual-bottom h2 em{font-style:normal;color:#f1c76a}
+.premium-mark{width:50px;height:50px;border:1px solid rgba(241,199,106,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#b9c5cd;font-size:6px;letter-spacing:1.5px;flex-shrink:0}
+.premium-mark strong{font-size:19px;line-height:1.2;color:#f1c76a;letter-spacing:0}
+.premium-rule{display:flex;gap:5px;margin-top:20px;position:relative;z-index:2}
+.premium-rule span{height:2px;flex:1;background:rgba(241,199,106,.2)}
+.premium-rule span:first-child,.premium-rule span:nth-child(2){background:#f1c76a}
+@media(max-width:1050px){.hero-layout{grid-template-columns:1fr;gap:22px}.hero-inner{padding-bottom:0}.premium-visual{max-width:600px;width:100%;margin:0 auto 25px;min-height:480px}.hero{min-height:auto}}
+@media(max-width:700px){.hero-layout{gap:18px}.hero-inner{padding:66px 0 0}.premium-visual{padding:18px 16px 16px;min-height:420px;margin-bottom:22px}.premium-art{height:250px}.premium-visual-bottom h2{font-size:20px}.premium-orb{width:46px;height:46px;right:0;top:15px}.premium-mark{width:43px;height:43px}}
 
 section{scroll-margin-top:86px}
 @media(max-width:700px){section{scroll-margin-top:72px}}
@@ -181,22 +177,33 @@ section{scroll-margin-top:86px}
 <h1>Building <span>stronger infrastructure</span> for a better tomorrow.</h1>
 <p>Construction, water infrastructure, transportation, earthwork and power-infrastructure execution backed by people, plant and disciplined field delivery.</p>
 <div class="actions"><a class="btn btn-primary" href="#projects">Explore Our Work →</a><a class="btn btn-outline" href="tel:+916388803330">Call +91 63888 03330</a></div>
-</div><aside class="india-showcase" aria-label="Infrastructure work across India">
-<div class="india-label"><span class="india-live-dot"></span> INFRASTRUCTURE • INDIA</div>
-<div class="india-map-wrap">
-<svg class="india-map" viewBox="0 0 360 390" role="img" aria-label="Stylized map of India with connected infrastructure points">
-<defs><linearGradient id="indiaFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f1c76a" stop-opacity=".28"/><stop offset="100%" stop-color="#ff8058" stop-opacity=".1"/></linearGradient><filter id="indiaGlow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-<path class="india-shape" d="M122 20 L145 29 157 23 177 34 190 32 201 45 222 49 231 65 251 69 265 84 258 102 274 113 268 130 281 143 271 158 253 165 247 185 260 201 251 218 236 226 226 246 218 265 208 282 198 303 185 324 171 352 159 370 148 350 140 330 129 309 115 288 102 269 91 250 77 231 65 210 51 193 42 173 31 155 36 138 51 129 58 111 72 99 78 82 92 69 99 50 111 38 Z" fill="url(#indiaFill)" stroke="#f1c76a" stroke-width="2.2" stroke-linejoin="round"/>
-<path class="india-route" d="M111 80 Q150 108 173 150 T200 220 T159 320 M78 174 Q135 170 173 150 T250 113 M173 150 Q203 174 231 201" fill="none" stroke="#ff8a5b" stroke-width="1.5" stroke-dasharray="4 6" opacity=".85"/>
-<g class="india-nodes"><circle cx="111" cy="80" r="5"/><circle cx="173" cy="150" r="6"/><circle cx="250" cy="113" r="4.5"/><circle cx="231" cy="201" r="5"/><circle cx="159" cy="320" r="5"/><circle cx="78" cy="174" r="4.5"/></g>
-<g class="india-map-labels"><text x="117" y="70">NORTH</text><text x="184" y="143">CENTRAL</text><text x="241" y="102">EAST</text><text x="238" y="216">SOUTH-EAST</text><text x="166" y="339">SOUTH</text><text x="34" y="168">WEST</text></g>
+</div><aside class="premium-visual" aria-label="Red Flamingos infrastructure capabilities">
+<div class="premium-visual-top"><span class="premium-overline">RED FLAMINGOS</span><span class="premium-index">RF <i> / </i> 01</span></div>
+<div class="premium-art">
+<svg viewBox="0 0 520 390" role="img" aria-label="Elegant line illustration of infrastructure structures including water tank, bridge and transmission tower">
+<defs>
+<linearGradient id="artGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f6d98c"/><stop offset="100%" stop-color="#d6a23a"/></linearGradient>
+<linearGradient id="artGlow" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f1c76a" stop-opacity=".22"/><stop offset="100%" stop-color="#f1c76a" stop-opacity="0"/></linearGradient>
+</defs>
+<circle cx="260" cy="185" r="150" fill="none" stroke="#f1c76a" stroke-opacity=".12"/>
+<circle cx="260" cy="185" r="120" fill="none" stroke="#f1c76a" stroke-opacity=".12" stroke-dasharray="2 8"/>
+<path d="M35 310 H485" stroke="#f1c76a" stroke-opacity=".45" stroke-width="1"/>
+<path d="M55 310 L55 275 L90 275 L90 310 M45 275 H100 M64 275 V250 H81 V275" fill="none" stroke="#f1c76a" stroke-opacity=".45" stroke-width="1.4"/>
+<g stroke="url(#artGold)" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round">
+<path d="M125 120 H222 Q230 120 230 130 V148 Q230 158 222 158 H125 Q117 158 117 148 V130 Q117 120 125 120 Z" fill="url(#artGlow)"/>
+<path d="M117 139 H230 M130 158 L130 275 M217 158 L217 275 M130 208 H217 M130 246 H217 M130 275 L217 275"/>
+<path d="M140 208 L208 246 M208 208 L140 246 M130 246 L217 208"/>
+<path d="M270 308 L320 95 L370 308 M290 222 H350 M280 265 H360 M300 180 H340 M310 137 H330 M320 95 L270 180 M320 95 L370 180 M290 222 L350 265 M350 222 L290 265"/>
+<path d="M280 150 H360 M290 150 L270 137 M350 150 L370 137 M300 137 H340"/>
+<path d="M35 310 Q95 296 155 310 T275 310 T395 310 T485 310" stroke-opacity=".5"/>
+</g>
+<g stroke="#ff8a5b" stroke-width="1.5" fill="#0e2532"><circle cx="173" cy="120" r="4"/><circle cx="320" cy="95" r="4"/><circle cx="320" cy="180" r="4"/></g>
+<g fill="#d5dee3" font-family="Arial,sans-serif" font-size="9" letter-spacing="2"><text x="117" y="104">WATER SYSTEMS</text><text x="300" y="78">POWER NETWORKS</text><text x="35" y="340">CIVIL</text><text x="235" y="340">TRANSPORT</text><text x="390" y="340">EXECUTION</text></g>
 </svg>
-<div class="map-orbit orbit-one"></div><div class="map-orbit orbit-two"></div>
-<div class="india-stamp"><span>RF</span><small>BUILT ON<br/>TRUST</small></div>
+<div class="premium-orb">RF<span>INFRA</span></div>
 </div>
-<div class="india-headline"><span>ONE VISION.</span><strong>STRONGER INDIA.</strong></div>
-<p class="india-caption">Connecting communities through dependable infrastructure.</p>
-<div class="india-tags"><span>WATER</span><span>CIVIL</span><span>TRANSPORT</span><span>POWER</span></div>
+<div class="premium-visual-bottom"><div><span class="premium-small">OUR APPROACH</span><h2>Built with purpose.<br/><em>Delivered with discipline.</em></h2></div><div class="premium-mark">EST.<br/><strong>RF</strong></div></div>
+<div class="premium-rule"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </aside></div></div></section>
 <div class="trust-strip"><div class="container trust"><div class="trust-item"><strong>Since 2015</strong><span>Construction journey & project experience</span></div><div class="trust-item"><strong>120+</strong><span>Listed field & support workforce</span></div><div class="trust-item"><strong>Multi-Sector</strong><span>Water • Civil • Power • Transport</span></div><div class="trust-item"><strong>Execution</strong><span>Government & infrastructure works</span></div></div></div>
 <section id="about"><div class="container about"><div class="about-copy"><div class="eyebrow">Who We Are</div><h2>Professional execution. Long-term relationships.</h2><p>Red Flamingos Corporation LLP is a professionally managed construction and infrastructure organization. The company profile describes a journey beginning in 2015, with experience across transportation, construction and public infrastructure works.</p><p>Under the leadership of <strong>Mr. Avinash Yadav</strong>, the organization focuses on quality, operational efficiency, integrity, client satisfaction and sustainable growth.</p><div class="signature"><b>Mr. Avinash Yadav</b><span>Leadership • Red Flamingos Corporation LLP</span></div></div><div class="feature-box"><div class="eyebrow">Our Focus</div><h3>Capability backed by people, plant and field execution.</h3><p>Our operating profile combines engineering and supervision with a substantial transportation and site-support workforce.</p><div class="feature-list"><div><i>✓</i> Civil construction & structures</div><div><i>✓</i> Jal Jeevan Mission & pipe laying</div><div><i>✓</i> Transportation & material logistics</div><div><i>✓</i> Earthwork & material supply</div><div><i>✓</i> 400 kV & 765 kV transmission line works</div></div></div></div></section>

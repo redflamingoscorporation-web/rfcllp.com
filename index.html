@@ -139,7 +139,7 @@ section{scroll-margin-top:86px}
   "knowsAbout":["Civil Construction","Construction and Infrastructure","Jal Jeevan Mission","OHSR Construction","Pipe Laying","Transportation","Earthwork","Material Supply","Government Infrastructure Projects","400 kV Transmission Line Works","765 kV Transmission Line Works"],
   "contactPoint":[{"@type":"ContactPoint","telephone":"+91-6388803330","email":"Admin@rfcllp.com","contactType":"business enquiries","areaServed":"IN","availableLanguage":["English","Hindi"]}]
 }
-function openEnquiry(event){if(event)event.preventDefault();const section=document.getElementById("enquiry");if(!section)return false;section.hidden=false;section.classList.add("enquiry-open");section.scrollIntoView({behavior:"smooth",block:"start"});return false;}</script>
+(function(){const p=new URLSearchParams(window.location.search);const target=p.get("section");if(target&&["about","services","projects","capabilities","team","contact"].includes(target)){window.addEventListener("load",function(){const el=document.getElementById(target);if(el){el.scrollIntoView({behavior:"auto",block:"start"});history.replaceState(null,"",window.location.pathname);}});}})();function openEnquiry(event){if(event)event.preventDefault();const section=document.getElementById("enquiry");if(!section)return false;section.hidden=false;section.classList.add("enquiry-open");section.scrollIntoView({behavior:"smooth",block:"start"});return false;}</script>
 <link rel="icon" href="logo-transparent-png.png" type="image/png">
 </head>
 <body>

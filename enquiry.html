@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Enquiry | Red Flamingos Corporation LLP</title>
+<meta name="description" content="Contact Red Flamingos Corporation LLP about civil construction and infrastructure projects.">
+<style>
+:root{--ink:#14202b;--muted:#64748b;--orange:#ed512b;--line:#e2e8f0}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7f9fb}
+header{background:#111920;color:#fff;padding:18px 24px}
+.head{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:800;letter-spacing:1px}.brand small{display:block;color:#f27a53;font-size:10px;letter-spacing:2px;margin-top:5px}
+header a{color:#fff;text-decoration:none;font-weight:700;font-size:14px}
+main{max-width:900px;margin:58px auto;padding:0 20px 60px}
+.eyebrow{font-size:12px;letter-spacing:3px;color:#a56a00;font-weight:800;margin-bottom:16px}
+h1{font-size:clamp(30px,5vw,44px);margin:0 0 12px;letter-spacing:-1px}
+.intro{color:var(--muted);line-height:1.6;margin:0 0 30px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 12px 34px #14202b0b}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:7px}.full{grid-column:1/-1}
+label{font-size:13px;font-weight:700}
+input,select,textarea{width:100%;border:1px solid #d6dee7;border-radius:7px;padding:13px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}
+textarea{min-height:130px;resize:vertical}
+button{background:var(--orange);border:0;border-radius:7px;color:#fff;font:inherit;font-weight:700;padding:14px 20px;cursor:pointer;width:100%}
+.note{font-size:12px;color:var(--muted);line-height:1.5;margin:0}
+.thanks{padding:18px;border:1px solid #b7e4c7;border-radius:9px;background:#f0fff4;color:#14532d;font-weight:700;line-height:1.6}
+[hidden]{display:none!important}
+@media(max-width:640px){main{margin:34px auto}.panel{padding:19px}form{grid-template-columns:1fr}.full{grid-column:auto}.head{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="head"><a href="https://rfcllp.com/" class="brand">RED FLAMINGOS <small>CORPORATION LLP</small></a><a href="https://rfcllp.com/">← Back to website</a></div></header>
+<main>
+<div class="eyebrow">BUSINESS ENQUIRY</div>
+<h1>Tell us about your requirement.</h1>
+<p class="intro">Share your contact details and project requirement. Our team can get in touch with you.</p>
+<div class="panel">
+<div id="thanks" class="thanks" role="status" aria-live="polite" hidden>Thank you! Your enquiry has been submitted successfully. Our team will contact you soon. <a href="https://rfcllp.com/">Return to website</a></div>
+<form id="enquiry-form" action="https://formsubmit.co/Admin@rfcllp.com" method="POST">
+<input type="hidden" name="_subject" value="New Website Enquiry - Red Flamingos Corporation LLP">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://rfcllp.com/enquiry.html?success=1#thanks">
+<div class="field"><label for="name">Full Name *</label><input id="name" name="Full Name" required maxlength="100" autocomplete="name" placeholder="Your full name"></div>
+<div class="field"><label for="phone">Mobile Number *</label><input id="phone" name="Mobile Number" type="tel" required maxlength="20" pattern="[+0-9 ()-]{8,20}" autocomplete="tel" placeholder="+91"></div>
+<div class="field"><label for="email">Email Address *</label><input id="email" name="Email Address" type="email" required maxlength="150" autocomplete="email" placeholder="you@example.com"></div>
+<div class="field"><label for="company">Company / Organisation</label><input id="company" name="Company / Organisation" maxlength="150" autocomplete="organization" placeholder="Company name (if applicable)"></div>
+<div class="field"><label for="type">Enquiry Type *</label><select id="type" name="Enquiry Type" required><option value="">Select enquiry type</option><option>Civil Construction</option><option>OHT / OHSR</option><option>Pipeline / Water Infrastructure</option><option>Transmission Line Works</option><option>Tender / Subcontract Work</option><option>Transportation / Material Supply</option><option>Other</option></select></div>
+<div class="field"><label for="location">Project Location</label><input id="location" name="Project Location" maxlength="150" placeholder="City, State"></div>
+<div class="field full"><label for="message">Project Details / Message *</label><textarea id="message" name="Project Details" required maxlength="3000" placeholder="Please share your project scope, approximate quantity or value, timeline, and other relevant details."></textarea></div>
+<div class="field full"><button type="submit">Submit Enquiry →</button></div>
+<div class="field full"><p class="note">Your details will be used to respond to this business enquiry. Please do not include passwords or sensitive personal information.</p></div>
+</form>
+</div>
+</main>
+<script>
+(function(){const p=new URLSearchParams(window.location.search);if(p.get("success")==="1"){document.getElementById("enquiry-form").hidden=true;document.getElementById("thanks").hidden=false;document.title="Thank You | Red Flamingos Corporation LLP";}})();
+</script>
+</body>
+</html>

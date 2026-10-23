@@ -70,6 +70,16 @@ footer{background:#050c13;color:#9eabb5;padding:25px 24px;text-align:center;font
 [hidden]{display:none!important}
 @media(max-width:640px){#career-form{grid-template-columns:1fr}#career-form .full{grid-column:auto}.apply{padding:19px}}
 
+
+/* Shared site-wide header: keep every page visually consistent with the homepage */
+header{position:sticky;top:0;z-index:50;background:rgba(17,25,32,.98)!important;color:#fff;padding:0 24px!important;border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 5px 20px rgba(0,0,0,.18)}
+header .nav{min-height:68px!important;display:flex;align-items:center;justify-content:space-between;gap:25px;flex-direction:row}
+header .brand-mark-wrap{width:62px;height:62px}
+header nav .nav-cta{background:#ed512b!important;color:#fff!important;padding:10px 16px;border-radius:7px;box-shadow:0 8px 20px rgba(237,81,43,.2);font-weight:800}
+header nav a:hover{color:#f1c76a}
+@media(max-width:900px){header .nav{align-items:center;flex-direction:row;flex-wrap:wrap}header .mobile-menu{display:block;margin-left:auto}header nav{display:none;flex-basis:100%;gap:14px 18px;padding:0 0 18px;flex-wrap:wrap}header nav.open{display:flex}}
+@media(max-width:600px){header{padding:0 16px!important}header .nav{min-height:68px!important;gap:10px}header .brand-mark-wrap{width:48px;height:48px}}
+
 </style>
 </head>
 <body>

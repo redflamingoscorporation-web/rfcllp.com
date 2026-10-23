@@ -65,15 +65,29 @@ footer a{color:#fff;text-decoration:none}
 @media(max-width:900px){.nav{align-items:flex-start;flex-direction:column}nav{gap:14px}.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){header{padding:14px 16px}.nav{gap:12px}.brand-mark-wrap{width:44px;height:44px}.brand-copy b{font-size:13px}.brand-copy small{font-size:8px}nav{display:grid;grid-template-columns:repeat(3,auto);gap:13px 17px}nav a{font-size:12px}.nav-cta{padding:8px 10px}main{padding:38px 16px 48px}.hero{margin-bottom:25px}.intro{font-size:14px}.team-grid{grid-template-columns:1fr;gap:18px}.team-member,.team-card-inner{min-height:470px}.team-front img{height:310px}.bottom-note{padding:20px 16px}}
 @media(prefers-reduced-motion:reduce){.team-card-inner{transition:none}}
+
+/* Match the main website header exactly */
+.container{width:min(1240px,calc(100% - 48px));margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(7,17,28,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 8px 28px rgba(0,0,0,.12);padding:0 24px}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px;flex-direction:row}
+.brand{color:#fff;display:flex;align-items:center;gap:14px;font-family:"Manrope",Arial,sans-serif;font-weight:800;letter-spacing:.8px;font-size:18px;text-decoration:none}
+.brand-mark-wrap{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.98);overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.22),0 0 0 1px rgba(214,162,58,.35);pointer-events:none;user-select:none;flex:0 0 auto;border:1px solid rgba(241,199,106,.5);padding:4px}
+.brand-mark{width:100%;height:100%;display:block;object-fit:contain;padding:1px}
+.brand-copy{display:flex;flex-direction:column;justify-content:center;line-height:1.05;padding-left:14px;border-left:1px solid rgba(255,255,255,.14)}
+.brand-copy b{display:block;font-size:15px;letter-spacing:1.8px;font-weight:800;color:#fff}
+.brand-copy small{display:block;color:#f1c76a;font-size:8px;letter-spacing:3.2px;margin-top:7px;font-weight:700}
+header nav{display:flex;align-items:center;gap:26px;color:#d8e0e7;font-size:13px;font-weight:600;flex-wrap:nowrap}
+header nav a{color:#d8e0e7;text-decoration:none;font-weight:600;font-size:13px;white-space:nowrap}
+header nav a:hover{color:#f1c76a}
+header nav .nav-cta{background:#d6a23a;color:#08121e;padding:10px 16px;border-radius:7px;box-shadow:0 8px 20px rgba(201,151,47,.18);font-weight:800}
+.mobile-menu{display:none;background:transparent;border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:6px;padding:7px 10px;font-size:20px;cursor:pointer}
+@media(max-width:900px){header .nav{align-items:center;flex-direction:row;flex-wrap:wrap}.mobile-menu{display:block;margin-left:auto}header nav{display:none;flex-basis:100%;grid-template-columns:repeat(3,auto);gap:14px 18px;padding:0 0 18px;flex-wrap:wrap}header nav.open{display:flex}header nav a{font-size:12px}}
+@media(max-width:600px){header{padding:0 16px}.container{width:100%}.nav{min-height:68px;gap:10px}.brand-mark-wrap{width:48px;height:48px}.brand{gap:10px}.brand-copy{padding-left:10px}.brand-copy b{font-size:13px;letter-spacing:1.3px}.brand-copy small{font-size:7px;letter-spacing:2.2px}header nav{gap:13px 17px}}
+
 </style>
 </head>
 <body>
-<header><div class="container nav">
-<a class="brand" href="https://rfcllp.com/" aria-label="Red Flamingos Corporation LLP"><span class="brand-mark-wrap"><img class="brand-mark" src="https://rfcllp.com/logo-transparent-png.png" alt="Red Flamingos Corporation LLP logo"></span><span class="brand-copy"><b>RED FLAMINGOS</b><small>CORPORATION LLP</small></span></a>
-<nav aria-label="Main navigation">
-<a href="https://rfcllp.com/?section=about">About</a><a href="https://rfcllp.com/?section=services">Services</a><a href="https://rfcllp.com/?section=projects">Projects</a><a href="https://rfcllp.com/?section=capabilities">Capabilities</a><a href="https://rfcllp.com/team.html" aria-current="page">Team</a><a href="https://rfcllp.com/?section=contact">Contact</a><a class="nav-cta" href="https://rfcllp.com/enquiry.html">Send Enquiry</a>
-</nav>
-</div></header>
+<header><div class="container nav"><a class="brand" href="https://rfcllp.com/" aria-label="Red Flamingos Corporation LLP"><span class="brand-mark-wrap" aria-hidden="true"><img class="brand-mark" src="logo-transparent-png.png" alt="Red Flamingos Corporation LLP logo"></span><span class="brand-copy"><b>RED FLAMINGOS</b><small>CORPORATION LLP</small></span></a><button class="mobile-menu" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">☰</button><nav id="mainNav" aria-label="Main navigation"><a href="https://rfcllp.com/#about">About</a><a href="https://rfcllp.com/#services">Services</a><a href="https://rfcllp.com/#projects">Projects</a><a href="https://rfcllp.com/#capabilities">Capabilities</a><a href="https://rfcllp.com/team.html" aria-current="page">Team</a><a href="https://rfcllp.com/#contact">Contact</a><a class="nav-cta" href="https://rfcllp.com/enquiry.html">Start a Conversation</a></nav></div></header>
 <main>
 <section class="hero"><div class="eyebrow">Leadership</div><h1>Our Leadership &amp; Core Team</h1><p class="intro">Our leadership and technical team brings together management, engineering and construction execution experience. Meet the people behind our commitment to dependable delivery, professional standards and long-term client relationships.</p></section>
 <section class="team-grid" aria-label="Leadership and core team profiles">
@@ -86,6 +100,6 @@ footer a{color:#fff;text-decoration:none}
 <div class="bottom-note">Our company profile reflects our journey, people, project capabilities and execution resources—built around dependable delivery, professional standards and long-term client relationships.<div class="bottom-actions"><a class="btn btn-primary" href="https://rfcllp.com/enquiry.html">Send Enquiry →</a><a class="btn btn-secondary" href="https://rfcllp.com/">Back to Home</a></div></div>
 </main>
 <footer>© Red Flamingos Corporation LLP · <a href="https://rfcllp.com/">rfcllp.com</a></footer>
-<script>function flipTeam(card){card.classList.toggle('is-flipped');}</script>
+<script>function flipTeam(card){card.classList.toggle('is-flipped');}function toggleMenu(){const n=document.getElementById("mainNav");const b=document.querySelector(".mobile-menu");const open=n.classList.toggle("open");b.setAttribute("aria-expanded",String(open));b.setAttribute("aria-label",open?"Close menu":"Open menu");b.textContent=open?"×":"☰";}</script>
 </body>
 </html>

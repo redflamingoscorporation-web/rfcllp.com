@@ -34,8 +34,8 @@ main{max-width:1180px;margin:0 auto;padding:58px 24px 72px}
 h1{font-size:clamp(30px,4vw,46px);line-height:1.15;margin:12px 0;color:#101c28;letter-spacing:-1px}
 .intro{font-size:16px;line-height:1.8;color:#64717d;margin:0 auto}
 .team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:38px}
-.team-member{position:relative;min-height:470px;perspective:1400px;cursor:pointer;padding:0;border:0;background:transparent;text-align:left}
-.team-card-inner{position:relative;width:100%;height:100%;min-height:470px;transition:transform .75s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d}
+.team-member{display:block;width:100%;appearance:none;-webkit-appearance:none;font:inherit;color:inherit;position:relative;min-height:470px;perspective:1400px;cursor:pointer;padding:0;border:0;background:transparent;text-align:left}
+.team-card-inner{display:block;position:relative;width:100%;height:100%;min-height:470px;transition:transform .75s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d}
 .team-member.is-flipped .team-card-inner{transform:rotateY(180deg)}
 .team-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#fff,#f8fafb);box-shadow:0 15px 38px rgba(10,20,30,.08);overflow:hidden}
 .team-front{padding:12px}
